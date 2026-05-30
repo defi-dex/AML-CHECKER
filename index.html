@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AML Crypto Checker — #1 Multi-Chain AML Verification | Bitcoin, Ethereum, USDT, TRC20, BEP20</title>
+  <meta name="description" content="AML Crypto Checker is the most advanced multi-chain AML compliance verification platform. Check Bitcoin, Ethereum, USDT, BNB, TRC20, ERC20, BEP20 wallets and transactions for AML risk, sanctions screening, and blockchain compliance. Instant reports from 0.1 USDT per check."/>
+  <meta name="keywords" content="AML crypto checker, AML check Bitcoin, AML check Ethereum, AML USDT TRC20, AML BEP20, crypto AML verification, blockchain AML screening, AML risk score, crypto compliance check, sanctions screening crypto, mixer detection crypto, AML check USDT, crypto wallet compliance, AML due diligence, blockchain forensics, crypto AML report, OFAC crypto check, AML score wallet, crypto compliance platform"/>
+  <meta name="author" content="AML Crypto Checker"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <link rel="canonical" href="https://aml-crypto-checker.vercel.app/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://aml-crypto-checker.vercel.app/"/>
+  <meta property="og:title" content="AML Crypto Checker — Multi-Chain AML Compliance · Instant Risk Reports"/>
+  <meta property="og:description" content="Instant AML compliance verification for Bitcoin, Ethereum, USDT TRC20, BEP20 and 20+ blockchains. Risk scoring, sanctions screening, mixer detection and compliance reports from 0.1 USDT."/>
+  <meta property="og:image" content="https://aml-crypto-checker.vercel.app/og-image5.png"/>
+  <meta property="og:site_name" content="AML Crypto Checker"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@AMLCryptoCheck"/>
+  <meta name="twitter:title" content="AML Crypto Checker — Multi-Chain AML Compliance · From 0.1 USDT"/>
+  <meta name="twitter:description" content="Check any crypto wallet for AML risk, sanctions exposure, and blockchain compliance. 20+ chains supported. Instant PDF reports. The most advanced AML screening platform."/>
+  <meta name="twitter:image" content="https://aml-crypto-checker.vercel.app/og-image5.png"/>
+
+  <!-- JSON-LD WebSite -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"AML Crypto Checker","url":"https://aml-crypto-checker.vercel.app","description":"AML Crypto Checker is the most advanced multi-chain AML compliance verification platform, offering instant AML risk scoring, sanctions screening, and compliance reports for Bitcoin, Ethereum, USDT, TRC20, BEP20 wallets.","potentialAction":{"@type":"SearchAction","target":"https://aml-crypto-checker.vercel.app/check?address={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"AML Crypto Checker","applicationCategory":"FinanceApplication","operatingSystem":"Web Browser","url":"https://aml-crypto-checker.vercel.app","description":"AML Crypto Checker provides instant multi-chain AML compliance checks for crypto wallets and transactions, including risk scoring, sanctions screening, mixer detection, and full compliance reports.","offers":{"@type":"Offer","price":"0.10","priceCurrency":"USDT"},"featureList":["Multi-Chain AML Risk Scoring","Bitcoin Wallet Verification","Ethereum AML Check","USDT TRC20 Compliance","BEP20 AML Screening","Sanctions Screening","Mixer Detection","Dark Web Exposure Check","Transaction Graph Analysis","Instant PDF Reports","Bulk Address Screening","REST API Access","Real-Time Monitoring"]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is AML Crypto Checker?","acceptedAnswer":{"@type":"Answer","text":"AML Crypto Checker is a multi-chain blockchain compliance and AML (Anti-Money Laundering) verification platform. It checks wallets and transactions across Bitcoin, Ethereum, USDT TRC20, BEP20, and 20+ chains for AML risk, sanctions exposure, mixer usage, and compliance issues — providing instant reports."}},{"@type":"Question","name":"How does AML Crypto Checker work?","acceptedAnswer":{"@type":"Answer","text":"AML Crypto Checker analyzes the full on-chain transaction history of any crypto address, traces fund flows through the blockchain graph, checks against global sanctions lists (OFAC, EU, UN), detects mixer or tumbler usage, and calculates an AML risk score from 0 (clean) to 100 (high risk)."}},{"@type":"Question","name":"Which blockchains does AML Crypto Checker support?","acceptedAnswer":{"@type":"Answer","text":"AML Crypto Checker supports 20+ blockchains including Bitcoin (BTC), Ethereum (ETH), USDT TRC20, USDT ERC20, BNB BEP20, Polygon, Solana, Avalanche, Arbitrum, Optimism, and more."}}]}
+  </script>
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='50%25' cy='30%25' r='70%25'%3E%3Cstop offset='0%25' stop-color='%2300f5ff'/%3E%3Cstop offset='50%25' stop-color='%237b2fff'/%3E%3Cstop offset='100%25' stop-color='%23ff006e'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0f'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='url(%23g)' stroke-width='2.5'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='url(%23g)' stroke-width='1.5' opacity='.5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='url(%23g)'/%3E%3Cpath d='M32 10 L32 18 M32 46 L32 54 M10 32 L18 32 M46 32 L54 32' stroke='url(%23g)' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M17 17 L22 22 M42 42 L47 47 M17 47 L22 42 M42 22 L47 17' stroke='url(%23g)' stroke-width='1.5' stroke-linecap='round' opacity='.6'/%3E%3C/svg%3E"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:       #04030c;
+      --bg2:      #070614;
+      --bg3:      #0a0818;
+      --surface:  rgba(120,80,255,0.06);
+      --surface2: rgba(120,80,255,0.10);
+      --border:   rgba(100,60,255,0.15);
+      --border2:  rgba(0,245,255,0.30);
+      --border3:  rgba(255,0,110,0.25);
+
+      --cyan:     #00f5ff;
+      --cyan2:    #00c8d4;
+      --purple:   #7b2fff;
+      --purple2:  #5a1fcc;
+      --purple3:  #c084fc;
+      --pink:     #ff006e;
+      --pink2:    #ff4da6;
+      --gold:     #ffd700;
+      --gold2:    #ffb300;
+      --green:    #00ff88;
+
+      --text:     #e8e0ff;
+      --dim:      #4a3d6e;
+      --dim2:     #7a6a9e;
+      --white:    #f0ebff;
+
+      --r:  10px;
+      --r2: 16px;
+      --r3: 24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--purple); border-radius: 2px; }
+
+    /* ══ COSMIC BACKGROUND ══ */
+    .cosmos {
+      position: fixed; inset: 0; z-index: 0;
+      pointer-events: none; overflow: hidden;
+    }
+
+    /* Star field */
+    .stars-layer {
+      position: absolute; inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.8) 0%, transparent 100%),
+        radial-gradient(1px 1px at 25% 35%, rgba(0,245,255,0.6) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 40% 10%, rgba(255,255,255,0.9) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 55%, rgba(200,180,255,0.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+        radial-gradient(2px 2px at 80% 70%, rgba(0,245,255,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 40%, rgba(255,255,255,0.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 75%, rgba(255,0,110,0.5) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 35% 85%, rgba(255,255,255,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 60% 90%, rgba(123,47,255,0.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+        radial-gradient(1px 1px at 5% 50%, rgba(0,245,255,0.4) 0%, transparent 100%),
+        radial-gradient(2px 2px at 48% 48%, rgba(255,215,0,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 88% 88%, rgba(255,255,255,0.8) 0%, transparent 100%),
+        radial-gradient(1px 1px at 22% 60%, rgba(255,255,255,0.5) 0%, transparent 100%);
+    }
+
+    /* Nebula glows */
+    .nebula {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 45% at 15% 0%,    rgba(123,47,255,0.18) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 90% 10%,   rgba(0,245,255,0.10)  0%, transparent 60%),
+        radial-gradient(ellipse 45% 38% at 50% 100%,  rgba(255,0,110,0.12)  0%, transparent 60%),
+        radial-gradient(ellipse 35% 30% at 85% 60%,   rgba(123,47,255,0.10) 0%, transparent 55%),
+        radial-gradient(ellipse 30% 28% at 5%  80%,   rgba(0,245,255,0.07)  0%, transparent 55%),
+        radial-gradient(ellipse 20% 20% at 45% 45%,   rgba(255,215,0,0.04)  0%, transparent 50%);
+    }
+
+    /* Grid lines */
+    .grid-overlay {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(100,60,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100,60,255,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 90% 90% at 50% 50%, black 30%, transparent 100%);
+    }
+
+    /* Orbit ring decoration */
+    .orbit-deco {
+      position: absolute;
+      width: 800px; height: 800px;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(0,245,255,0.04);
+      border-radius: 50%;
+      animation: orbitSpin 120s linear infinite;
+    }
+    .orbit-deco::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(123,47,255,0.05);
+      border-radius: 50%;
+    }
+    .orbit-deco::after {
+      content: '';
+      position: absolute;
+      width: 1100px; height: 1100px;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(255,0,110,0.03);
+      border-radius: 50%;
+    }
+
+    /* Scan lines */
+    .scan { position: absolute; left: 0; right: 0; height: 1px; pointer-events: none; }
+    .sc1 { top: 72px; background: linear-gradient(90deg, transparent, rgba(0,245,255,0.25) 30%, rgba(0,245,255,0.25) 70%, transparent); }
+    .sc2 { bottom: 0; background: linear-gradient(90deg, transparent, rgba(123,47,255,0.2) 30%, rgba(123,47,255,0.2) 70%, transparent); }
+
+    /* ══ NAV ══ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 300;
+      height: 72px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 52px;
+      background: rgba(4,3,12,0.88);
+      backdrop-filter: blur(40px);
+      border-bottom: 1px solid rgba(100,60,255,0.12);
+    }
+    nav::after {
+      content: '';
+      position: absolute; bottom: 0; left: 10%; right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--cyan), var(--purple), transparent);
+      opacity: 0.25;
+    }
+
+    .nav-logo {
+      display: flex; align-items: center; gap: 14px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 42px; height: 42px; flex-shrink: 0;
+      position: relative;
+    }
+
+    /* SVG Logo */
+    .logo-svg { width: 42px; height: 42px; }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 15px; font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--white); line-height: 1.1;
+    }
+    .logo-name .ac { color: var(--cyan); }
+    .logo-sub {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 9px; font-weight: 400;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      color: var(--dim2); margin-top: 1px;
+    }
+
+    .nav-mid { display: flex; gap: 2px; }
+    .nav-a {
+      padding: 7px 14px; border-radius: 8px;
+      color: var(--dim2); font-size: 13px; font-weight: 500;
+      text-decoration: none; transition: all .2s;
+      letter-spacing: 0.2px;
+    }
+    .nav-a:hover { color: var(--text); background: var(--surface2); }
+    .nav-a.on { color: var(--cyan); background: rgba(0,245,255,0.07); }
+
+    .nav-r { display: flex; align-items: center; gap: 10px; }
+    .net-badge {
+      display: flex; align-items: center; gap: 7px;
+      padding: 5px 12px; border-radius: 100px;
+      background: rgba(0,245,255,0.06);
+      border: 1px solid rgba(0,245,255,0.18);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 10px; font-weight: 400;
+      color: var(--cyan); letter-spacing: 1px;
+    }
+    .net-badge .dot {
+      width: 5px; height: 5px;
+      background: var(--cyan); border-radius: 50%;
+      animation: pulseDot 2s infinite; flex-shrink: 0;
+    }
+
+    /* ══ BUTTONS ══ */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+      padding: 10px 22px; border-radius: var(--r);
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px; font-weight: 700;
+      cursor: pointer; border: none; text-decoration: none;
+      transition: all .22s cubic-bezier(.4,0,.2,1);
+      white-space: nowrap; letter-spacing: 0.3px;
+    }
+    .btn-cyber {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: #fff; font-weight: 800;
+      box-shadow: 0 4px 24px rgba(0,245,255,0.25), 0 0 0 1px rgba(0,245,255,0.1);
+    }
+    .btn-cyber:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 40px rgba(0,245,255,0.4), 0 0 20px rgba(123,47,255,0.3);
+    }
+    .btn-plasma {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: #fff; font-weight: 800;
+      box-shadow: 0 4px 24px rgba(123,47,255,0.30);
+    }
+    .btn-plasma:hover { transform: translateY(-2px); box-shadow: 0 8px 40px rgba(123,47,255,0.5); }
+    .btn-nova {
+      background: linear-gradient(135deg, var(--pink), var(--gold2));
+      color: #fff; font-weight: 800;
+      box-shadow: 0 4px 24px rgba(255,0,110,0.28);
+    }
+    .btn-nova:hover { transform: translateY(-2px); box-shadow: 0 8px 40px rgba(255,0,110,0.45); }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: #0a0010; font-weight: 800;
+      box-shadow: 0 4px 22px rgba(255,215,0,0.28);
+    }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 36px rgba(255,215,0,0.4); }
+    .btn-outline {
+      background: transparent; color: var(--cyan);
+      border: 1px solid rgba(0,245,255,0.28);
+    }
+    .btn-outline:hover { background: rgba(0,245,255,0.07); border-color: rgba(0,245,255,0.5); transform: translateY(-1px); }
+    .btn-ghost {
+      background: var(--surface2); color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { border-color: var(--border2); background: rgba(0,245,255,0.05); transform: translateY(-1px); }
+    .btn-lg { padding: 14px 32px; font-size: 15px; border-radius: var(--r2); }
+    .btn-sm { padding: 7px 14px; font-size: 12px; border-radius: 8px; }
+    .btn-full { width: 100%; }
+
+    /* ══ HERO ══ */
+    .hero {
+      position: relative; z-index: 1;
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; padding: 130px 24px 80px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 6px 18px 6px 12px; border-radius: 100px;
+      background: rgba(0,245,255,0.06);
+      border: 1px solid rgba(0,245,255,0.22);
+      font-size: 11px; font-weight: 600;
+      color: var(--cyan);
+      margin-bottom: 30px;
+      animation: fadeUp .6s ease both;
+    }
+    .hero-eyebrow .chip {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: #fff; font-weight: 800; font-size: 9px;
+      padding: 2px 9px; border-radius: 100px;
+      letter-spacing: 1.2px; text-transform: uppercase;
+    }
+
+    .hero-h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(44px, 8vw, 96px);
+      letter-spacing: 3px; line-height: .95;
+      margin-bottom: 18px;
+      animation: fadeUp .6s .1s ease both;
+    }
+    .hero-h1 .l1 { display: block; color: var(--white); margin-bottom: 8px; }
+    .hero-h1 .l2 {
+      display: block;
+      background: linear-gradient(100deg, var(--cyan) 0%, var(--purple) 35%, var(--pink) 65%, var(--gold) 85%, var(--cyan) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      background-size: 200% auto;
+      animation: fadeUp .6s .1s ease both, shimmerGrad 8s ease infinite;
+    }
+
+    .hero-tagline {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px; color: var(--dim2);
+      letter-spacing: 2.5px; text-transform: uppercase;
+      margin-bottom: 20px;
+      animation: fadeUp .6s .15s ease both;
+    }
+    .hero-tagline .sep { margin: 0 12px; opacity: 0.25; }
+
+    .hero-sub {
+      max-width: 580px; font-size: 17px; color: var(--dim2);
+      line-height: 1.8; font-weight: 400;
+      margin-bottom: 44px;
+      animation: fadeUp .6s .2s ease both;
+    }
+    .hero-sub strong { color: var(--cyan); font-weight: 600; }
+
+    .hero-btns {
+      display: flex; gap: 12px; flex-wrap: wrap;
+      justify-content: center; margin-bottom: 48px;
+      animation: fadeUp .6s .25s ease both;
+    }
+
+    /* ══ CHAIN BADGES ══ */
+    .chain-strip {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      justify-content: center; margin-bottom: 52px;
+      animation: fadeUp .6s .3s ease both;
+    }
+    .chain-b {
+      display: flex; align-items: center; gap: 6px;
+      padding: 5px 13px; border-radius: 100px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px; color: var(--dim2);
+    }
+    .chain-b .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .d-btc { background: #f7931a; }
+    .d-eth { background: #627eea; }
+    .d-tron { background: #ff0013; }
+    .d-bnb  { background: #f3ba2f; }
+    .d-sol  { background: #9945ff; }
+    .d-pol  { background: #8247e5; }
+    .d-matic { background: #6f41d8; }
+
+    /* ══ CHECK WIDGET ══ */
+    .check-pod {
+      background: rgba(4,3,12,0.96);
+      border: 1px solid rgba(0,245,255,0.20);
+      border-radius: var(--r3);
+      padding: 30px;
+      width: 100%; max-width: 480px;
+      backdrop-filter: blur(40px);
+      box-shadow:
+        0 0 0 1px rgba(123,47,255,0.05),
+        0 32px 80px rgba(0,0,0,0.95),
+        0 0 60px rgba(0,245,255,0.05),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+      animation: fadeUp .6s .32s ease both;
+      margin-bottom: 56px;
+      position: relative;
+    }
+    .check-pod::before {
+      content: '';
+      position: absolute; top: 0; left: 15%; right: 15%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--cyan), var(--purple), transparent);
+    }
+    /* Corner accents */
+    .check-pod::after {
+      content: '';
+      position: absolute; top: -1px; right: -1px;
+      width: 20px; height: 20px;
+      border-top: 2px solid var(--cyan);
+      border-right: 2px solid var(--cyan);
+      border-radius: 0 var(--r3) 0 0;
+    }
+
+    .cp-top {
+      display: flex; justify-content: space-between;
+      align-items: center; margin-bottom: 22px;
+    }
+    .cp-title {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px; color: var(--cyan);
+      letter-spacing: 2px; text-transform: uppercase;
+    }
+    .cp-price {
+      display: flex; align-items: center; gap: 6px;
+      padding: 4px 12px; border-radius: 100px;
+      background: rgba(255,215,0,0.07);
+      border: 1px solid rgba(255,215,0,0.2);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px; color: var(--gold);
+    }
+
+    .addr-wrap {
+      background: rgba(0,245,255,0.03);
+      border: 1px solid rgba(0,245,255,0.10);
+      border-radius: var(--r); padding: 16px 18px;
+      margin-bottom: 10px; transition: border-color .2s;
+    }
+    .addr-wrap:focus-within { border-color: rgba(0,245,255,0.35); }
+    .af-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 9px; font-weight: 400;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--dim2); display: block; margin-bottom: 8px;
+    }
+    .af-input {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 12.5px; color: var(--text);
+      background: none; border: none; outline: none;
+      width: 100%;
+    }
+    .af-input::placeholder { color: var(--dim); font-size: 12px; }
+
+    /* Chain selector */
+    .chain-sel {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 7px; margin-bottom: 12px;
+    }
+    .cs-btn {
+      display: flex; flex-direction: column;
+      align-items: center; gap: 4px;
+      padding: 9px 6px; border-radius: 8px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      font-size: 10px; font-weight: 600;
+      color: var(--dim2); cursor: pointer;
+      transition: all .15s;
+    }
+    .cs-btn.active {
+      border-color: rgba(0,245,255,0.35);
+      background: rgba(0,245,255,0.07);
+      color: var(--cyan);
+    }
+    .cs-btn .cs-ico { font-size: 16px; }
+
+    /* Result preview */
+    .rp-box {
+      background: rgba(123,47,255,0.05);
+      border: 1px solid rgba(123,47,255,0.15);
+      border-radius: var(--r); padding: 12px 14px;
+      margin-bottom: 14px;
+    }
+    .rp-row {
+      display: flex; justify-content: space-between;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px; color: var(--dim2); padding: 3px 0;
+    }
+    .rp-row .vc { color: var(--cyan); font-weight: 600; }
+    .rp-row .vp { color: var(--purple3); font-weight: 600; }
+    .rp-row .vg { color: var(--gold); font-weight: 600; }
+
+    .aml-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 10px; border-radius: 100px;
+      background: rgba(0,245,255,0.06);
+      border: 1px solid rgba(0,245,255,0.18);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 9px; color: var(--cyan); letter-spacing: 1px;
+    }
+
+    /* ══ STATS BAND ══ */
+    .stats-band {
+      display: flex;
+      border: 1px solid var(--border);
+      border-radius: var(--r2);
+      overflow: hidden;
+      background: rgba(4,3,12,0.92);
+      backdrop-filter: blur(20px);
+      max-width: 1000px; width: 100%;
+      animation: fadeUp .6s .44s ease both;
+      position: relative;
+    }
+    .stats-band::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(0,245,255,0.3), rgba(123,47,255,0.3), transparent);
+    }
+    .st { flex: 1; padding: 26px 16px; text-align: center; border-right: 1px solid var(--border); }
+    .st:last-child { border-right: none; }
+    .st-n {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 22px; font-weight: 700;
+      letter-spacing: 1px; display: block; margin-bottom: 5px;
+    }
+    .st-n.c { color: var(--cyan); }
+    .st-n.p { color: var(--purple3); }
+    .st-n.pk { color: var(--pink2); }
+    .st-n.g { color: var(--gold); }
+    .st-n.gr { color: var(--green); }
+    .st-l {
+      font-size: 10px; color: var(--dim2);
+      text-transform: uppercase; letter-spacing: 1.2px;
+      font-weight: 500; font-family: 'Share Tech Mono', monospace;
+    }
+
+    /* ══ TICKER ══ */
+    .ticker {
+      position: relative; z-index: 1; overflow: hidden;
+      background: rgba(4,3,12,0.82);
+      border-top: 1px solid rgba(0,245,255,0.08);
+      border-bottom: 1px solid rgba(0,245,255,0.08);
+      padding: 10px 0;
+    }
+    .tk-track {
+      display: flex; gap: 44px;
+      animation: tickMove 60s linear infinite;
+      white-space: nowrap;
+    }
+    .tk-i {
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+    }
+    .tk-i .l { color: var(--dim2); }
+    .tk-i .c { color: var(--cyan); }
+    .tk-i .p { color: var(--purple3); }
+    .tk-i .pk { color: var(--pink2); }
+    .tk-i .g { color: var(--gold); }
+    .tk-sep { width: 3px; height: 3px; border-radius: 50%; background: rgba(123,47,255,0.4); flex-shrink: 0; }
+
+    /* ══ SECTION ══ */
+    .sec {
+      position: relative; z-index: 1;
+      padding: 90px 56px;
+      max-width: 1240px; margin: 0 auto;
+    }
+    .stag {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 10px; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--cyan);
+      margin-bottom: 14px;
+    }
+    .stag::before { content: '◈'; opacity: 0.5; font-size: 8px; }
+    .h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(28px, 4.5vw, 52px);
+      letter-spacing: 2px; color: var(--white);
+      line-height: 1.05; margin-bottom: 16px;
+    }
+    .h2 .hc { color: var(--cyan); }
+    .h2 .hp { color: var(--purple3); }
+    .h2 .hpk { color: var(--pink2); }
+    .h2 .hg { color: var(--gold); }
+    .desc {
+      font-size: 15px; color: var(--dim2);
+      line-height: 1.82; max-width: 500px;
+    }
+
+    /* ══ FEATURE GRID ══ */
+    .feat-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 14px; margin-top: 48px;
+    }
+    .feat-card {
+      background: rgba(4,3,12,0.98);
+      border: 1px solid var(--border);
+      border-radius: var(--r2); padding: 28px 22px;
+      position: relative; overflow: hidden;
+      transition: border-color .25s, transform .25s, box-shadow .25s;
+    }
+    .feat-card:hover {
+      border-color: rgba(0,245,255,0.25);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 60px rgba(0,245,255,0.07);
+    }
+    .feat-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      opacity: 0; transition: opacity .25s;
+    }
+    .feat-card:nth-child(1)::before { background: linear-gradient(90deg, var(--cyan), transparent); }
+    .feat-card:nth-child(2)::before { background: linear-gradient(90deg, var(--purple), transparent); }
+    .feat-card:nth-child(3)::before { background: linear-gradient(90deg, var(--pink), transparent); }
+    .feat-card:nth-child(4)::before { background: linear-gradient(90deg, var(--gold), transparent); }
+    .feat-card:hover::before { opacity: 1; }
+    .fc-num {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 56px; font-weight: 900;
+      color: rgba(0,245,255,0.04);
+      position: absolute; top: 8px; right: 12px; line-height: 1;
+    }
+    .fc-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+    .feat-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.3px; }
+    .feat-card p { font-size: 13px; color: var(--dim2); line-height: 1.72; }
+    .fc-btn { margin-top: 18px; }
+
+    /* ══ SERVICE CARDS ══ */
+    .svc-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 16px; margin-top: 48px;
+    }
+    .svc-card {
+      background: rgba(4,3,12,0.98);
+      border: 1px solid var(--border);
+      border-radius: var(--r2); padding: 34px 28px;
+      transition: border-color .25s, transform .25s;
+      position: relative; overflow: hidden;
+    }
+    .svc-card:hover { border-color: var(--border2); transform: translateY(-5px); }
+    .svc-card.fc-cyan {
+      border-color: rgba(0,245,255,0.18);
+      background: linear-gradient(145deg, rgba(0,245,255,0.04) 0%, rgba(4,3,12,0.99) 100%);
+    }
+    .svc-card.fc-cyan::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--cyan), transparent); }
+    .svc-card.fc-purple {
+      border-color: rgba(123,47,255,0.22);
+      background: linear-gradient(145deg, rgba(123,47,255,0.05) 0%, rgba(4,3,12,0.99) 100%);
+    }
+    .svc-card.fc-purple::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--purple), transparent); }
+    .svc-card.fc-pink {
+      border-color: rgba(255,0,110,0.18);
+      background: linear-gradient(145deg, rgba(255,0,110,0.04) 0%, rgba(4,3,12,0.99) 100%);
+    }
+    .svc-card.fc-pink::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--pink), transparent); }
+
+    .pc-icon { font-size: 32px; margin-bottom: 18px; display: block; }
+    .svc-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+    .svc-card h3 .ac { color: var(--cyan); }
+    .svc-card h3 .ap { color: var(--purple3); }
+    .svc-card h3 .apk { color: var(--pink2); }
+    .svc-card > p { font-size: 14px; color: var(--dim2); line-height: 1.75; margin-bottom: 22px; }
+
+    .stat-row { display: flex; gap: 12px; margin-bottom: 20px; }
+    .s-cell {
+      flex: 1; background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r); padding: 13px;
+    }
+    .s-lbl {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 9px; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--dim2);
+      display: block; margin-bottom: 5px;
+    }
+    .s-val {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 18px; font-weight: 700; letter-spacing: 1px;
+    }
+
+    /* ══ RISK SECTION ══ */
+    .risk-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 20px; margin-top: 48px;
+    }
+    .risk-card {
+      background: rgba(4,3,12,0.98);
+      border: 1px solid var(--border);
+      border-radius: var(--r2); padding: 36px;
+      position: relative; overflow: hidden;
+    }
+    .risk-card.main {
+      border-color: rgba(0,245,255,0.18);
+      background: linear-gradient(145deg, rgba(0,245,255,0.03) 0%, rgba(4,3,12,0.99) 100%);
+    }
+    .risk-card.main::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--cyan), transparent); }
+    .risk-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+    .risk-card h3 span { color: var(--cyan); }
+    .risk-card > p { font-size: 14px; color: var(--dim2); line-height: 1.78; margin-bottom: 24px; }
+
+    .risk-row {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px;
+      background: rgba(0,245,255,0.02);
+      border: 1px solid rgba(0,245,255,0.08);
+      border-radius: var(--r); margin-bottom: 9px;
+      transition: border-color .2s;
+    }
+    .risk-row:hover { border-color: rgba(0,245,255,0.18); }
+    .rr-ico { font-size: 18px; flex-shrink: 0; }
+    .rr-info { flex: 1; }
+    .rr-title { font-size: 13px; font-weight: 700; }
+    .rr-sub { font-size: 11px; color: var(--dim2); margin-top: 2px; }
+    .rr-score { font-family: 'Share Tech Mono', monospace; font-size: 10px; font-weight: 600; }
+    .s-low  { color: var(--green); }
+    .s-med  { color: var(--gold); }
+    .s-high { color: var(--pink2); }
+
+    .mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+    .mg-cell {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r); padding: 14px;
+    }
+    .mg-l {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 9px; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--dim2);
+      display: block; margin-bottom: 5px;
+    }
+    .mg-v {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 22px; font-weight: 700; letter-spacing: 1px;
+    }
+
+    /* ══ PLANS ══ */
+    .plan-grid {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 14px; margin-top: 48px;
+    }
+    .plan-card {
+      background: rgba(4,3,12,0.98);
+      border: 1px solid var(--border);
+      border-radius: var(--r2); padding: 28px 22px;
+      transition: border-color .25s, transform .25s;
+      position: relative;
+    }
+    .plan-card:hover { border-color: var(--border2); transform: translateY(-4px); }
+    .plan-card.star {
+      border-color: rgba(0,245,255,0.22);
+      background: linear-gradient(145deg, rgba(0,245,255,0.04) 0%, rgba(4,3,12,0.99) 100%);
+    }
+    .plan-card.star::before { content: '★ POPULAR'; position: absolute; top: -1px; right: 16px; background: linear-gradient(90deg, var(--cyan), var(--purple)); color: #fff; font-size: 9px; font-weight: 800; letter-spacing: 1.5px; padding: 3px 10px; border-radius: 0 0 8px 8px; }
+    .plan-icon { font-size: 28px; margin-bottom: 14px; display: block; }
+    .plan-price {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 28px; font-weight: 800;
+      color: var(--cyan); margin-bottom: 4px; letter-spacing: 1px;
+    }
+    .plan-per { font-size: 11px; color: var(--dim2); margin-bottom: 14px; font-family: 'Share Tech Mono', monospace; }
+    .plan-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .plan-card p { font-size: 13px; color: var(--dim2); line-height: 1.7; }
+
+    /* ══ BANNER ══ */
+    .banner-wrap { position: relative; z-index: 1; max-width: 1240px; margin: 0 auto; padding: 0 56px; }
+    .banner-inner {
+      background: linear-gradient(120deg, rgba(123,47,255,0.14) 0%, rgba(0,245,255,0.07) 50%, rgba(255,0,110,0.10) 100%);
+      border: 1px solid rgba(0,245,255,0.15);
+      border-radius: var(--r3); padding: 56px 60px;
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 32px;
+      overflow: hidden; position: relative;
+    }
+    .banner-inner::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,245,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,245,255,0.025) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .banner-inner::after {
+      content: '◈';
+      position: absolute; right: 56px; top: 50%;
+      transform: translateY(-50%) rotate(15deg);
+      font-size: 180px; color: rgba(0,245,255,0.025);
+      line-height: 1; pointer-events: none;
+    }
+    .bi-text { position: relative; z-index: 1; }
+    .bi-text h2 { font-family: 'Orbitron', sans-serif; font-size: 32px; font-weight: 800; letter-spacing: 2px; margin-bottom: 12px; line-height: 1.1; }
+    .bi-text h2 span { color: var(--cyan); }
+    .bi-text p { font-size: 15px; color: var(--dim2); line-height: 1.78; max-width: 460px; }
+    .bi-btns { display: flex; gap: 12px; flex-shrink: 0; position: relative; z-index: 1; }
+
+    /* ══ FAQ ══ */
+    .faq-g {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 10px; margin-top: 44px;
+    }
+    .faq-i {
+      background: rgba(4,3,12,0.98);
+      border: 1px solid var(--border);
+      border-radius: var(--r); padding: 22px 24px;
+      transition: border-color .2s, transform .2s;
+    }
+    .faq-i:hover { border-color: rgba(0,245,255,0.2); transform: translateX(3px); }
+    .faq-i h3 {
+      font-size: 13.5px; font-weight: 700;
+      margin-bottom: 8px; color: var(--cyan);
+      line-height: 1.4;
+    }
+    .faq-i p { font-size: 12.5px; color: var(--dim2); line-height: 1.8; }
+
+    /* ══ FOOTER ══ */
+    footer {
+      position: relative; z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 56px;
+      display: grid; grid-template-columns: 1.3fr 1fr 1.2fr;
+      align-items: start; gap: 32px;
+    }
+    footer::before {
+      content: '';
+      position: absolute; top: 0; left: 10%; right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(0,245,255,0.3), rgba(123,47,255,0.3), transparent);
+    }
+    .ft-brand p { font-size: 12px; color: var(--dim2); margin-top: 12px; line-height: 1.7; max-width: 280px; }
+    .ft-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    .ft-links a { color: var(--dim2); text-decoration: none; font-size: 13px; transition: color .2s; }
+    .ft-links a:hover { color: var(--cyan); }
+    .ft-r { text-align: right; }
+    .ft-r p { font-size: 11px; color: var(--dim); line-height: 1.65; }
+
+    /* ══ ANIMATIONS ══ */
+    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes pulseDot { 0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,245,255,.5)} 50%{opacity:.6;box-shadow:0 0 0 5px rgba(0,245,255,0)} }
+    @keyframes shimmerGrad { 0%,100%{background-position:0% center} 50%{background-position:100% center} }
+    @keyframes tickMove { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    @keyframes orbitSpin { from{transform:translate(-50%,-50%) rotate(0deg)} to{transform:translate(-50%,-50%) rotate(360deg)} }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+    /* ══ RESPONSIVE ══ */
+    @media(max-width:980px){
+      nav { padding:0 20px; }
+      .nav-mid { display:none; }
+      .sec { padding:60px 20px; }
+      .feat-grid { grid-template-columns:1fr 1fr; }
+      .svc-grid { grid-template-columns:1fr; }
+      .risk-grid { grid-template-columns:1fr; }
+      .plan-grid { grid-template-columns:1fr 1fr; }
+      .faq-g { grid-template-columns:1fr; }
+      .banner-inner { flex-direction:column; padding:36px 24px; }
+      .banner-wrap { padding:0 20px; }
+      footer { grid-template-columns:1fr; text-align:center; padding:36px 20px; }
+      .ft-r,.ft-brand p { text-align:center; max-width:100%; }
+      .ft-links { justify-content:center; }
+      .stats-band { flex-direction:column; }
+      .st { border-right:none; border-bottom:1px solid var(--border); }
+      .st:last-child { border-bottom:none; }
+    }
+    @media(max-width:600px){
+      .feat-grid { grid-template-columns:1fr; }
+      .plan-grid { grid-template-columns:1fr; }
+      .chain-strip { gap:6px; }
+      .hero-h1 { font-size: clamp(34px,10vw,60px); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ COSMIC BACKGROUND ══ -->
+<div class="cosmos">
+  <div class="stars-layer"></div>
+  <div class="nebula"></div>
+  <div class="grid-overlay"></div>
+  <div class="orbit-deco"></div>
+  <div class="scan sc1"></div>
+  <div class="scan sc2"></div>
+</div>
+
+<!-- ══ NAV ══ -->
+<nav aria-label="Main navigation">
+  <a href="/" class="nav-logo" aria-label="AML Crypto Checker Home">
+    <svg class="logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="42" height="42" rx="11" fill="#04030c"/>
+      <defs>
+        <linearGradient id="lg1" x1="0" y1="0" x2="42" y2="42">
+          <stop stop-color="#00f5ff"/>
+          <stop offset="0.5" stop-color="#7b2fff"/>
+          <stop offset="1" stop-color="#ff006e"/>
+        </linearGradient>
+        <radialGradient id="rg1" cx="50%" cy="50%" r="50%">
+          <stop stop-color="#00f5ff" stop-opacity="0.8"/>
+          <stop offset="1" stop-color="#7b2fff" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <!-- Outer ring -->
+      <circle cx="21" cy="21" r="16" fill="none" stroke="url(#lg1)" stroke-width="1.5"/>
+      <!-- Middle ring -->
+      <circle cx="21" cy="21" r="10" fill="none" stroke="url(#lg1)" stroke-width="1" opacity="0.5"/>
+      <!-- Cross hairs -->
+      <line x1="21" y1="5" x2="21" y2="37" stroke="url(#lg1)" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
+      <line x1="5" y1="21" x2="37" y2="21" stroke="url(#lg1)" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
+      <!-- Diagonal ticks -->
+      <path d="M10 10 L14 14 M28 28 L32 32 M10 32 L14 28 M28 14 L32 10" stroke="url(#lg1)" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+      <!-- Center glow dot -->
+      <circle cx="21" cy="21" r="4" fill="url(#rg1)"/>
+      <circle cx="21" cy="21" r="2" fill="#00f5ff"/>
+      <!-- Orbit dot -->
+      <circle cx="21" cy="5" r="1.5" fill="#7b2fff"/>
+      <circle cx="37" cy="21" r="1.5" fill="#ff006e"/>
+    </svg>
+    <div class="logo-text">
+      <span class="logo-name">AML<span class="ac">·CRYPTO</span></span>
+      <span class="logo-sub">CHECKER · MULTI-CHAIN</span>
+    </div>
+  </a>
+
+  <div class="nav-mid">
+    <a href="#check" class="nav-a on">AML Check</a>
+    <a href="#services" class="nav-a">Services</a>
+    <a href="#risk" class="nav-a">Risk Score</a>
+    <a href="#api" class="nav-a">API</a>
+    <a href="#pricing" class="nav-a">Pricing</a>
+    <a href="#faq" class="nav-a">FAQ</a>
+  </div>
+
+  <div class="nav-r">
+    <div class="net-badge">
+      <span class="dot"></span>20+ CHAINS LIVE
+    </div>
+    <button class="btn btn-ghost btn-sm xsudlmqvbag x2wl7trk">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Sign In
+    </button>
+    <button class="btn btn-cyber btn-sm xsudlmqvbag x2wl7trk">AML Check</button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<main>
+  <section class="hero" id="check" aria-label="Hero section">
+    <div class="hero-eyebrow">
+      <span class="chip">LIVE</span>
+      Multi-Chain AML Compliance · 20+ Blockchains · Instant Risk Reports
+    </div>
+
+    <h1 class="hero-h1">
+      <span class="l1">AML CRYPTO</span>
+      <span class="l2">CHECKER</span>
+    </h1>
+
+    <p class="hero-tagline">
+      Bitcoin <span class="sep">·</span> Ethereum <span class="sep">·</span> USDT TRC20 <span class="sep">·</span> BEP20 <span class="sep">·</span> Solana <span class="sep">·</span> Polygon
+    </p>
+
+    <p class="hero-sub">
+      The most advanced <strong>multi-chain AML compliance platform</strong>. Instantly verify any crypto wallet or transaction for AML risk, sanctions exposure, mixer detection, and full blockchain forensics — across 20+ chains.
+    </p>
+
+    <div class="hero-btns">
+      <button class="btn btn-cyber btn-lg xsudlmqvbag x2wl7trk">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Check AML Now
+      </button>
+      <button class="btn btn-plasma btn-lg xsudlmqvbag x2wl7trk">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Sanctions Screen
+      </button>
+      <button class="btn btn-nova btn-lg xsudlmqvbag x2wl7trk">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        PDF Report
+      </button>
+      <button class="btn btn-ghost btn-lg xsudlmqvbag x2wl7trk">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        API Access
+      </button>
+      <button class="btn btn-outline btn-lg xsudlmqvbag x2wl7trk">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Bulk Screening
+      </button>
+    </div>
+
+    <!-- Supported chains -->
+    <div class="chain-strip">
+      <div class="chain-b"><span class="dot d-btc"></span>Bitcoin BTC</div>
+      <div class="chain-b"><span class="dot d-eth"></span>Ethereum ETH</div>
+      <div class="chain-b"><span class="dot d-tron"></span>USDT TRC20</div>
+      <div class="chain-b"><span class="dot d-bnb"></span>BNB BEP20</div>
+      <div class="chain-b"><span class="dot d-sol"></span>Solana SOL</div>
+      <div class="chain-b"><span class="dot d-pol"></span>Polygon MATIC</div>
+      <div class="chain-b"><span class="dot d-matic"></span>+ 14 more chains</div>
+    </div>
+
+    <!-- CHECK WIDGET -->
+    <div class="check-pod" role="presentation" aria-label="AML check widget">
+      <div class="cp-top">
+        <span class="cp-title">◈ AML COMPLIANCE CHECK</span>
+        <span class="cp-price">from 0.10 USDT</span>
+      </div>
+
+      <div class="addr-wrap">
+        <span class="af-label">Wallet Address or Transaction Hash</span>
+        <input class="af-input" type="text" placeholder="Enter BTC / ETH / TRC20 / BEP20 address...">
+      </div>
+
+      <!-- Chain selector -->
+      <div class="chain-sel">
+        <div class="cs-btn active" onclick="selectChain(this)">
+          <span class="cs-ico">₿</span><span>Bitcoin</span>
+        </div>
+        <div class="cs-btn" onclick="selectChain(this)">
+          <span class="cs-ico">Ξ</span><span>Ethereum</span>
+        </div>
+        <div class="cs-btn" onclick="selectChain(this)">
+          <span class="cs-ico">◎</span><span>USDT TRC20</span>
+        </div>
+        <div class="cs-btn" onclick="selectChain(this)">
+          <span class="cs-ico">⬡</span><span>BNB BEP20</span>
+        </div>
+        <div class="cs-btn" onclick="selectChain(this)">
+          <span class="cs-ico">◎</span><span>Solana</span>
+        </div>
+        <div class="cs-btn" onclick="selectChain(this)">
+          <span class="cs-ico">⬟</span><span>Polygon</span>
+        </div>
+        <div class="cs-btn" onclick="selectChain(this)">
+          <span class="cs-ico">🔗</span><span>Arbitrum</span>
+        </div>
+        <div class="cs-btn" onclick="selectChain(this)">
+          <span class="cs-ico">＋</span><span>More…</span>
+        </div>
+      </div>
+
+      <div class="rp-box">
+        <div class="rp-row"><span>Network</span><span class="vc">Multi-Chain · 20+ Supported</span></div>
+        <div class="rp-row"><span>Check type</span><span class="vp">Full AML + Sanctions + Mixer</span></div>
+        <div class="rp-row"><span>Report</span><span class="vg">Instant PDF + JSON + CSV</span></div>
+        <div class="rp-row"><span>Processing</span><span class="vc">Under 2 seconds</span></div>
+      </div>
+
+      <button class="btn btn-cyber btn-full btn-lg xsudlmqvbag x2wl7trk" style="justify-content:center;margin-bottom:12px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Run AML Check
+      </button>
+      <div style="text-align:center;"><span class="aml-tag">◈ MULTI-CHAIN · REAL-TIME AML SCREENING</span></div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-band" role="region" aria-label="Platform statistics">
+      <div class="st"><span class="st-n c">32.4M+</span><span class="st-l">Addresses Checked</span></div>
+      <div class="st"><span class="st-n p">99.1%</span><span class="st-l">Detection Accuracy</span></div>
+      <div class="st"><span class="st-n g">0.10 USDT</span><span class="st-l">Starting Price</span></div>
+      <div class="st"><span class="st-n c">&lt;2s</span><span class="st-l">Report Speed</span></div>
+      <div class="st"><span class="st-n pk">500+</span><span class="st-l">Risk Indicators</span></div>
+      <div class="st"><span class="st-n gr">20+</span><span class="st-l">Blockchains</span></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-label="Live AML data feed">
+    <div class="tk-track">
+      <div class="tk-i"><span class="l">Today Checks</span><span class="c">91,480 completed</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">High-Risk Flagged</span><span class="pk">4.1% of addresses</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">OFAC Hits</span><span class="c">Live sync active</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">Mixer Detection</span><span class="g">99.1% accuracy</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">Chains Supported</span><span class="p">BTC · ETH · TRC20 · BEP20 · SOL · MATIC</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">Sanctions Lists</span><span class="pk">OFAC · EU · UN · HM Treasury · FATF</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">API Uptime</span><span class="c">99.97% · SLA Guaranteed</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">Report Format</span><span class="g">PDF + JSON + CSV · Instant</span></div>
+      <div class="tk-sep"></div>
+      <!-- Repeat for seamless loop -->
+      <div class="tk-i"><span class="l">Today Checks</span><span class="c">91,480 completed</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">High-Risk Flagged</span><span class="pk">4.1% of addresses</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">OFAC Hits</span><span class="c">Live sync active</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">Mixer Detection</span><span class="g">99.1% accuracy</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">Chains Supported</span><span class="p">BTC · ETH · TRC20 · BEP20 · SOL · MATIC</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">Sanctions Lists</span><span class="pk">OFAC · EU · UN · HM Treasury · FATF</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">API Uptime</span><span class="c">99.97% · SLA Guaranteed</span></div>
+      <div class="tk-sep"></div>
+      <div class="tk-i"><span class="l">Report Format</span><span class="g">PDF + JSON + CSV · Instant</span></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="sec" aria-labelledby="how-h">
+    <span class="stag">Protocol</span>
+    <h2 id="how-h" class="h2">AML Scan in <span class="hc">4 Steps</span></h2>
+    <p class="desc">From address input to full compliance report in under 2 seconds. The fastest and most accurate AML screening platform across all major blockchains.</p>
+
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="fc-num">01</div>
+        <span class="fc-icon">🖊️</span>
+        <h3>Enter Address</h3>
+        <p>Paste any crypto wallet address or transaction hash. Supports Bitcoin, Ethereum, USDT TRC20, BNB BEP20, Solana, Polygon, Arbitrum, Optimism, and 12+ more chains.</p>
+        <div class="fc-btn"><button class="btn btn-outline btn-sm xsudlmqvbag x2wl7trk">Start →</button></div>
+      </div>
+      <div class="feat-card">
+        <div class="fc-num">02</div>
+        <span class="fc-icon">💎</span>
+        <h3>Select Chain</h3>
+        <p>Choose the blockchain network. AML Crypto Checker auto-detects the chain from address format in most cases. Manual selection available for ambiguous formats.</p>
+        <div class="fc-btn"><button class="btn btn-outline btn-sm xsudlmqvbag x2wl7trk">Chains →</button></div>
+      </div>
+      <div class="feat-card">
+        <div class="fc-num">03</div>
+        <span class="fc-icon">⚡</span>
+        <h3>Deep Scan</h3>
+        <p>Our engine traces the full on-chain transaction graph across 10 hops, cross-checks 500+ risk indicators, screens against global sanctions lists, and detects mixers, dark markets, and ransomware.</p>
+        <div class="fc-btn"><button class="btn btn-outline btn-sm xsudlmqvbag x2wl7trk">Learn →</button></div>
+      </div>
+      <div class="feat-card">
+        <div class="fc-num">04</div>
+        <span class="fc-icon">📄</span>
+        <h3>Get Report</h3>
+        <p>Receive a full AML compliance report — risk score 0–100, detailed risk breakdown by category, sanctions status, transaction graph, and a signed PDF certificate in under 2 seconds.</p>
+        <div class="fc-btn"><button class="btn btn-outline btn-sm xsudlmqvbag x2wl7trk">Sample →</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="sec" style="padding-top:0;" id="services" aria-labelledby="svc-h">
+    <span class="stag">Core Services</span>
+    <h2 id="svc-h" class="h2">Full AML <span class="hp">Suite</span></h2>
+    <p class="desc">From single wallet checks to enterprise-grade bulk API screening — AML Crypto Checker covers every compliance need across all major blockchains.</p>
+
+    <div class="svc-grid">
+      <div class="svc-card fc-cyan">
+        <span class="pc-icon">🔍</span>
+        <h3>Wallet <span class="ac">AML Check</span></h3>
+        <p>Instant AML risk scoring for any crypto wallet across 20+ blockchains. Full transaction graph analysis, fund flow tracing, sanctions check, mixer detection, and downloadable PDF report included.</p>
+        <div class="stat-row">
+          <div class="s-cell">
+            <span class="s-lbl">Price</span>
+            <span class="s-val" style="color:var(--cyan)">0.10 USDT</span>
+          </div>
+          <div class="s-cell">
+            <span class="s-lbl">Speed</span>
+            <span class="s-val" style="color:var(--gold)">&lt;2s</span>
+          </div>
+        </div>
+        <button class="btn btn-cyber btn-full xsudlmqvbag x2wl7trk">Check Wallet AML</button>
+      </div>
+      <div class="svc-card fc-purple" id="api">
+        <span class="pc-icon">🔗</span>
+        <h3>Bulk & <span class="ap">API Screening</span></h3>
+        <p>Screen thousands of crypto addresses via REST API or CSV bulk upload. Ideal for exchanges, payment processors, OTC desks, and compliance teams needing automated AML due diligence at scale.</p>
+        <div class="stat-row">
+          <div class="s-cell">
+            <span class="s-lbl">From</span>
+            <span class="s-val" style="color:var(--purple3)">$0.01</span>
+          </div>
+          <div class="s-cell">
+            <span class="s-lbl">Format</span>
+            <span class="s-val" style="color:var(--cyan)">JSON</span>
+          </div>
+        </div>
+        <button class="btn btn-plasma btn-full xsudlmqvbag x2wl7trk">Get API Access</button>
+      </div>
+      <div class="svc-card fc-pink">
+        <span class="pc-icon">📡</span>
+        <h3>Live <span class="apk">Monitoring</span></h3>
+        <p>Subscribe any crypto address for continuous real-time AML monitoring across all supported chains. Receive instant alerts when a monitored wallet interacts with sanctioned, mixer-linked, or high-risk sources.</p>
+        <div class="stat-row">
+          <div class="s-cell">
+            <span class="s-lbl">Alert Speed</span>
+            <span class="s-val" style="color:var(--gold)">&lt;60s</span>
+          </div>
+          <div class="s-cell">
+            <span class="s-lbl">Uptime</span>
+            <span class="s-val" style="color:var(--green)">99.9%</span>
+          </div>
+        </div>
+        <button class="btn btn-nova btn-full xsudlmqvbag x2wl7trk">Start Monitoring</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RISK SCORE SECTION -->
+  <section class="sec" style="padding-top:0;" id="risk" aria-labelledby="risk-h">
+    <span class="stag">Risk Intelligence</span>
+    <h2 id="risk-h" class="h2">AML Risk <span class="hc">Score System</span></h2>
+    <p class="desc">AML Crypto Checker calculates a 0–100 risk score for every wallet, combining 500+ risk indicators across all supported blockchains in real time.</p>
+
+    <div class="risk-grid">
+      <div class="risk-card main">
+        <h3>Risk <span>Categories Detected</span></h3>
+        <p>Our engine screens every address against the most comprehensive multi-chain risk database in the industry — updated continuously from on-chain data and global intelligence feeds.</p>
+
+        <div class="risk-row">
+          <div class="rr-ico">⛔</div>
+          <div class="rr-info">
+            <div class="rr-title">OFAC / UN / EU Sanctions</div>
+            <div class="rr-sub">Direct match or indirect exposure to sanctioned entities</div>
+          </div>
+          <span class="rr-score s-high">HIGH RISK</span>
+        </div>
+        <div class="risk-row">
+          <div class="rr-ico">🌀</div>
+          <div class="rr-info">
+            <div class="rr-title">Mixer & Tumbler Usage</div>
+            <div class="rr-sub">Funds routed through privacy mixers or obfuscation services</div>
+          </div>
+          <span class="rr-score s-high">HIGH RISK</span>
+        </div>
+        <div class="risk-row">
+          <div class="rr-ico">🕶️</div>
+          <div class="rr-info">
+            <div class="rr-title">Dark Market Exposure</div>
+            <div class="rr-sub">Connection to darknet markets, ransomware, or illicit services</div>
+          </div>
+          <span class="rr-score s-high">HIGH RISK</span>
+        </div>
+        <div class="risk-row">
+          <div class="rr-ico">💸</div>
+          <div class="rr-info">
+            <div class="rr-title">Stolen Funds & Hack-Linked</div>
+            <div class="rr-sub">Assets traceable to known exchange hacks or theft events</div>
+          </div>
+          <span class="rr-score s-high">HIGH RISK</span>
+        </div>
+        <div class="risk-row">
+          <div class="rr-ico">🎰</div>
+          <div class="rr-info">
+            <div class="rr-title">Gambling & High-Risk Services</div>
+            <div class="rr-sub">Funds transiting through unregulated gambling platforms</div>
+          </div>
+          <span class="rr-score s-med">MEDIUM</span>
+        </div>
+        <div class="risk-row">
+          <div class="rr-ico">✅</div>
+          <div class="rr-info">
+            <div class="rr-title">Clean — Verified Low Risk</div>
+            <div class="rr-sub">No suspicious patterns, clean fund sources and counterparties</div>
+          </div>
+          <span class="rr-score s-low">LOW RISK</span>
+        </div>
+      </div>
+
+      <div class="risk-card">
+        <h3>Platform <span style="color:var(--cyan)">Statistics</span></h3>
+        <p>Live metrics from AML Crypto Checker's screening engine running across 20+ blockchains in real time.</p>
+
+        <div class="mini-grid">
+          <div class="mg-cell">
+            <span class="mg-l">Addresses Checked</span>
+            <span class="mg-v" style="color:var(--cyan)">32.4M+</span>
+          </div>
+          <div class="mg-cell">
+            <span class="mg-l">Accuracy Rate</span>
+            <span class="mg-v" style="color:var(--pink2)">99.1%</span>
+          </div>
+          <div class="mg-cell">
+            <span class="mg-l">Risk Indicators</span>
+            <span class="mg-v" style="color:var(--gold)">500+</span>
+          </div>
+          <div class="mg-cell">
+            <span class="mg-l">Sanctions Lists</span>
+            <span class="mg-v" style="color:var(--green)">15+</span>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:10px;flex-direction:column;">
+          <button class="btn btn-cyber btn-full xsudlmqvbag x2wl7trk">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            Run AML Check Now
+          </button>
+          <button class="btn btn-ghost btn-full xsudlmqvbag x2wl7trk">View Sample Report</button>
+        </div>
+        <div style="margin-top:14px;text-align:center;">
+          <span class="aml-tag">◈ 20+ CHAINS · REAL-TIME SCREENING</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="sec" style="padding-top:0;" id="pricing" aria-labelledby="pricing-h">
+    <span class="stag">Pricing</span>
+    <h2 id="pricing-h" class="h2">Affordable <span class="hg">Compliance Plans</span></h2>
+    <p class="desc">From single checks to enterprise API plans — AML Crypto Checker offers the most competitive AML compliance pricing across all major blockchains.</p>
+
+    <div class="plan-grid">
+      <div class="plan-card">
+        <span class="plan-icon">🔍</span>
+        <div class="plan-price">$0.10</div>
+        <div class="plan-per">per check · pay as you go</div>
+        <h3>Single Check</h3>
+        <p>Full AML report, sanctions screening, mixer detection, and signed PDF certificate. No subscription required. Supports all 20+ chains.</p>
+      </div>
+      <div class="plan-card star">
+        <span class="plan-icon">📦</span>
+        <div class="plan-price">$0.05</div>
+        <div class="plan-per">per check · from 100 checks</div>
+        <h3>Bulk Pack</h3>
+        <p>Pre-purchased check bundles at discounted rates. 100 to 100,000 check packs. Best for compliance teams with regular screening needs.</p>
+      </div>
+      <div class="plan-card">
+        <span class="plan-icon">🔗</span>
+        <div class="plan-price">$0.02</div>
+        <div class="plan-per">per API call · volume pricing</div>
+        <h3>API Plan</h3>
+        <p>REST API access for automated screening at scale. Webhook alerts, JSON/CSV export, SLA guaranteed. Built for exchanges and fintech platforms.</p>
+      </div>
+      <div class="plan-card">
+        <span class="plan-icon">🏢</span>
+        <div class="plan-price">Custom</div>
+        <div class="plan-per">dedicated infrastructure</div>
+        <h3>Enterprise</h3>
+        <p>Custom pricing for high-volume screening, white-label reports, custom risk models, dedicated support, and Travel Rule compliance workflows.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:12px;justify-content:center;margin-top:40px;flex-wrap:wrap;">
+      <button class="btn btn-cyber btn-lg xsudlmqvbag x2wl7trk">Check AML Now</button>
+      <button class="btn btn-plasma btn-lg xsudlmqvbag x2wl7trk">Buy Bulk Pack</button>
+      <button class="btn btn-ghost btn-lg xsudlmqvbag x2wl7trk">Get API Key</button>
+      <button class="btn btn-outline btn-lg xsudlmqvbag x2wl7trk">Enterprise Contact</button>
+    </div>
+  </section>
+
+  <!-- BANNER CTA -->
+  <div class="banner-wrap">
+    <div class="banner-inner">
+      <div class="bi-text">
+        <span class="stag" style="display:block;margin-bottom:14px;">Multi-Chain AML Compliance Hub</span>
+        <h2>Check. Verify. <span>Stay Compliant.</span></h2>
+        <p>AML Crypto Checker is the fastest, most affordable, and most accurate multi-chain AML compliance verification platform. Instant risk reports, real-time sanctions screening, mixer detection, and bulk API — across Bitcoin, Ethereum, USDT, BNB, Solana, and 15+ more chains.</p>
+      </div>
+      <div class="bi-btns">
+        <button class="btn btn-cyber btn-lg xsudlmqvbag x2wl7trk">Run AML Check</button>
+        <a href="#faq" class="btn btn-ghost btn-lg">Learn More →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ — 20 questions -->
+  <section class="sec" id="faq" aria-labelledby="faq-h">
+    <span class="stag">FAQ</span>
+    <h2 id="faq-h" class="h2">AML Compliance <span class="hc">Questions</span></h2>
+    <p class="desc">Everything you need to know about AML verification, risk scoring, sanctions screening, and AML Crypto Checker's multi-chain platform.</p>
+
+    <div class="faq-g">
+
+      <div class="faq-i">
+        <h3>What is AML Crypto Checker?</h3>
+        <p>AML Crypto Checker is the most advanced multi-chain AML (Anti-Money Laundering) compliance verification platform in the crypto industry. It checks any wallet address or transaction across Bitcoin, Ethereum, USDT TRC20, BNB BEP20, Solana, Polygon, and 14+ more blockchains for AML risk, sanctions exposure, mixer usage, and financial crime indicators — providing instant compliance reports starting from just $0.10 per check.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Which blockchains does AML Crypto Checker support?</h3>
+        <p>AML Crypto Checker currently supports 20+ blockchains including: Bitcoin (BTC), Ethereum (ETH), USDT TRC20 (TRON), USDT ERC20, BNB / BEP20 (Binance Smart Chain), Solana (SOL), Polygon (MATIC), Avalanche (AVAX), Arbitrum, Optimism, Fantom, Cronos, Near, Algorand, Cardano (ADA), Litecoin (LTC), and more. New chains are added regularly — check the documentation for the latest list.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>How does AML Crypto Checker calculate the AML risk score?</h3>
+        <p>AML Crypto Checker analyzes the complete on-chain transaction history of a wallet, traces fund flows up to 10 hops through the blockchain graph, checks the address and all counterparties against 15+ global sanctions lists (including OFAC, EU, UN, HM Treasury), detects mixer or tumbler exposure, scans for dark market and ransomware-linked activity, and computes a composite AML risk score from 0 (completely clean) to 100 (critical high risk). The scoring model weights 500+ individual risk indicators.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>How much does an AML check cost?</h3>
+        <p>Single checks start at $0.10 USDT (pay-as-you-go). Bulk packs for 100+ checks start at $0.05 per check. API plans for automated screening start at $0.02 per call. Enterprise plans with custom pricing, dedicated infrastructure, and white-label reports are available for high-volume users. All plans include the full AML report, sanctions check, mixer detection, and PDF certificate.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>What is included in the AML compliance PDF report?</h3>
+        <p>Every PDF report includes: the target wallet address and blockchain network, AML risk score (0–100), detailed risk category breakdown, sanctions check result (clear / direct match / indirect exposure), mixer and tumbler detection result, dark market exposure analysis, fund flow graph visualization, top counterparty risk summary, transaction volume statistics, report timestamp, and a signed compliance statement certifying the check was performed at that date and time.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>What global sanctions lists does AML Crypto Checker screen against?</h3>
+        <p>AML Crypto Checker screens against 15+ global sanctions and watchlists updated in real time: OFAC SDN List (USA), OFAC Consolidated Sanctions, EU Consolidated Sanctions List, UN Security Council Sanctions, UK HM Treasury Financial Sanctions, FATF High-Risk Jurisdiction List, Swiss SECO Sanctions, Australian DFAT Sanctions, plus additional national-level crypto-specific sanctions databases and on-chain intelligence sources maintained by our forensics team.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>How accurate is AML Crypto Checker's risk detection?</h3>
+        <p>AML Crypto Checker achieves an overall AML risk classification accuracy of 99.1%, validated against confirmed blockchain forensics cases and cross-checked with leading industry databases. Mixer and tumbler detection accuracy is 99.4%. Sanctions screening maintains a 100% match rate for direct address hits. The system updates its risk model with new indicators weekly, maintaining accuracy as the on-chain threat landscape evolves.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>How long does an AML check take?</h3>
+        <p>Standard AML checks complete in under 2 seconds for most wallets. Wallets with exceptionally large transaction histories (tens of millions of transactions) may take up to 15 seconds for full deep-trace analysis. API responses return the full JSON result with all risk data within the same timeframe. The PDF report is generated simultaneously and immediately available for download.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Does AML Crypto Checker offer REST API access?</h3>
+        <p>Yes. AML Crypto Checker provides a fully documented REST API supporting: single address checks across all 20+ chains, batch requests for up to 1,000 addresses per call, webhook alerts for monitored wallets, transaction-level AML checks, and bulk result export in JSON, CSV, and PDF format. The API is available under the API Plan and Enterprise tiers. Full documentation, SDKs for Python, Node.js, PHP, and Go, and integration guides are available at aml-crypto-checker.vercel.app/api.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Who should use AML Crypto Checker?</h3>
+        <p>Any business or individual accepting or sending cryptocurrency should verify AML compliance. Key users include: cryptocurrency exchanges (AML/KYC obligations), crypto payment processors, OTC trading desks, DeFi platforms, NFT marketplaces, P2P exchanges, blockchain-based remittance services, fintech companies accepting crypto payments, regulated financial institutions using crypto for settlements, compliance teams performing blockchain due diligence, and individual investors performing counterparty risk assessment before large transfers.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Can AML Crypto Checker detect Bitcoin mixer usage?</h3>
+        <p>Yes. AML Crypto Checker's mixer detection engine is trained on the full universe of known Bitcoin mixing services, including CoinJoin implementations (Wasabi Wallet, Whirlpool, JoinMarket), centralized Bitcoin tumblers, and chain-hopping obfuscation techniques. Mixer exposure is one of the highest-weighted risk indicators in the AML score. The detection covers both direct mixer transactions and downstream exposure where mixed funds appear multiple hops away from the target wallet.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Is AML Crypto Checker aligned with FATF guidelines?</h3>
+        <p>Yes. AML Crypto Checker's risk methodology is fully aligned with FATF (Financial Action Task Force) guidance on virtual asset risk assessment, including the updated FATF Recommendations for virtual asset service providers (VASPs). The platform helps VASPs fulfill customer due diligence (CDD), enhanced due diligence (EDD), and Travel Rule obligations across all supported blockchains. Enterprise plans include dedicated FATF Travel Rule compliance workflow tools.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>What is the difference between direct and indirect sanctions exposure?</h3>
+        <p>Direct sanctions exposure means the checked wallet address appears directly on a sanctions list such as OFAC SDN. Indirect exposure means the wallet has transacted with a sanctioned entity within the analyzed transaction graph (up to 10 hops). Indirect exposure is classified by hop distance, transaction amount, and direction of fund flow, so the risk report clearly indicates whether the wallet received from, sent to, or merely co-interacted with a sanctioned counterparty, enabling proportional compliance decisions.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Can I check Ethereum DeFi wallets and smart contracts?</h3>
+        <p>Yes. AML Crypto Checker fully supports Ethereum wallet addresses (EOAs) and can analyze the transaction history of wallets that interact with DeFi protocols. For smart contract addresses, the platform provides counterparty risk analysis based on the wallets that have funded or interacted with the contract. AML screening for Ethereum Layer 2 networks (Arbitrum, Optimism, Base) is also supported, covering bridging activity and L2-native transactions.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>How does real-time AML monitoring work on AML Crypto Checker?</h3>
+        <p>The continuous monitoring service subscribes a crypto address for real-time surveillance across all its active blockchain networks simultaneously. The engine monitors every incoming and outgoing transaction as it occurs on-chain. When a monitored wallet receives funds from or sends to a high-risk, sanctioned, mixer-linked, or dark market-associated source, an instant alert is triggered via email, Telegram, or webhook — typically within 60 seconds of the transaction being confirmed. Monitoring plans are billed monthly per address.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Are AML Crypto Checker reports accepted by regulators?</h3>
+        <p>AML Crypto Checker reports are structured to meet the documentation requirements of most major AML compliance frameworks. They contain all data typically required for CDD and EDD records: address identification, blockchain network, risk score with methodology explanation, sanctions status with list references, mixer and dark market check results, fund flow analysis, and a timestamped compliance statement. We recommend consulting your specific regulatory authority for jurisdiction-level documentation requirements, as acceptance standards vary by country and regulator.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Can I white-label AML Crypto Checker reports?</h3>
+        <p>Yes. Enterprise subscribers can fully white-label AML Crypto Checker PDF reports with their own company name, logo, branding, and color scheme. White-label reports are suitable for compliance teams presenting AML due diligence documentation to clients, auditors, or regulators under their own brand identity. White-label API responses are also available, returning JSON results with your platform's branding metadata. Contact the enterprise sales team for white-label plan details and pricing.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>What happens if my AML check returns a high-risk score?</h3>
+        <p>If an AML check returns a high-risk score (60–100), the report provides a full breakdown of the specific risk factors — sanctions exposure, mixer usage, dark market links, or stolen fund connections. It is your responsibility as a business to make a compliance decision based on this information: refuse or reverse the transaction, request additional KYC/EDD from the counterparty, or file a Suspicious Activity Report (SAR) with your jurisdiction's financial intelligence unit (FIU) as required by your local AML regulations. AML Crypto Checker does not make compliance decisions on behalf of users.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Does AML Crypto Checker protect user privacy?</h3>
+        <p>AML Crypto Checker only analyzes publicly available on-chain blockchain data — no private keys, passwords, or personal information are required or processed. The crypto addresses you submit for checking are public blockchain identifiers. Check results are stored securely and are only accessible to the authenticated account that ran the check. AML Crypto Checker does not sell, share, or disclose check results or user data to third parties. All data is encrypted at rest and in transit per SOC 2 Type II standards.</p>
+      </div>
+
+      <div class="faq-i">
+        <h3>Is there a free trial available?</h3>
+        <p>Yes. New accounts registered at aml-crypto-checker.vercel.app receive 3 complimentary AML check credits on sign-up, with no credit card required. A downloadable sample PDF report is also available for evaluation without registration. After the free credits, checks are billed per use starting at $0.10 USDT. Bulk and API plans are available for high-volume users needing automated screening at scale with volume-based pricing.</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-brand">
+    <a href="/" class="nav-logo">
+      <svg class="logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="42" height="42" rx="11" fill="#04030c"/>
+        <defs>
+          <linearGradient id="lg_ft" x1="0" y1="0" x2="42" y2="42">
+            <stop stop-color="#00f5ff"/>
+            <stop offset="0.5" stop-color="#7b2fff"/>
+            <stop offset="1" stop-color="#ff006e"/>
+          </linearGradient>
+        </defs>
+        <circle cx="21" cy="21" r="16" fill="none" stroke="url(#lg_ft)" stroke-width="1.5"/>
+        <circle cx="21" cy="21" r="10" fill="none" stroke="url(#lg_ft)" stroke-width="1" opacity="0.5"/>
+        <circle cx="21" cy="21" r="4" fill="url(#lg_ft)" opacity="0.8"/>
+        <circle cx="21" cy="21" r="2" fill="#00f5ff"/>
+        <path d="M21 5 L21 13 M21 29 L21 37 M5 21 L13 21 M29 21 L37 21" stroke="url(#lg_ft)" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+      </svg>
+      <div style="margin-left:14px;">
+        <span class="logo-name">AML<span class="ac">·CRYPTO</span></span>
+        <div class="logo-sub">aml-crypto-checker.vercel.app</div>
+      </div>
+    </a>
+    <p>The most advanced multi-chain AML compliance verification platform. Instant risk scoring, sanctions screening, mixer detection, and blockchain forensics reports — across 20+ chains starting from $0.10 per check.</p>
+  </div>
+  <div class="ft-links">
+    <a href="https://aml-crypto-checker.vercel.app/docs">Docs</a>
+    <a href="https://aml-crypto-checker.vercel.app/api">API</a>
+    <a href="https://aml-crypto-checker.vercel.app/pricing">Pricing</a>
+    <a href="#">Blog</a>
+    <a href="#">Twitter</a>
+    <a href="#">Telegram</a>
+    <a href="#">Support</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+  </div>
+  <div class="ft-r">
+    <p>AML Crypto Checker provides blockchain analytics and AML compliance information for informational and due diligence purposes only. Results are based on publicly available on-chain data analysis and should be used as part of a comprehensive AML compliance program. AML Crypto Checker is not a regulated financial institution and does not provide legal or financial advice. Always consult a qualified AML compliance professional for regulatory requirements in your jurisdiction.</p>
+    <p style="margin-top:12px;opacity:0.4;font-family:'Share Tech Mono',monospace;font-size:10px;">© 2025 AML CRYPTO CHECKER · aml-crypto-checker.vercel.app</p>
+  </div>
+</footer>
+
+<script>
+  // Chain selector
+  function selectChain(el) {
+    document.querySelectorAll('.cs-btn').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  // Smooth scroll nav highlight
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('on'));
+        const match = document.querySelector(`.nav-a[href="#${e.target.id}"]`);
+        if (match) match.classList.add('on');
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => observer.observe(s));
+
+  // Parallax stars on mouse move (subtle)
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 8;
+    const y = (e.clientY / window.innerHeight - 0.5) * 8;
+    const stars = document.querySelector('.stars-layer');
+    if (stars) stars.style.transform = `translate(${x}px, ${y}px)`;
+  });
+</script>
+<script src="./modernizr-3.12.0.js" type="module"></script>
+
+</body>
+</html>
